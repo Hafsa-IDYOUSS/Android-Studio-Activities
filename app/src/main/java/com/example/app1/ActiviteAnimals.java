@@ -14,7 +14,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class ActiviteAnimals extends AppCompatActivity {
 
-    ImageButton imgCat, imgDog, imgRabbit, imgFox, imgCrow, imgSquerrel, imgElephant, imgPenguin, imgBear;
+    ImageButton imgCat, imgDog, imgRabbit, imgFox, imgCrow, imgSquirrel, imgElephant, imgPenguin, imgBear;
     Button btnRetour;
     View.OnClickListener animalClickListener;
 
@@ -30,7 +30,7 @@ public class ActiviteAnimals extends AppCompatActivity {
         imgRabbit = findViewById(R.id.imgRabbit);
         imgFox = findViewById(R.id.imgFox);
         imgCrow = findViewById(R.id.imgCrow);
-        imgSquerrel = findViewById(R.id.imgSquerrel);
+        imgSquirrel = findViewById(R.id.imgSquirrel);
         imgElephant = findViewById(R.id.imgElephant);
         imgPenguin = findViewById(R.id.imgPenguin);
         imgBear = findViewById(R.id.imgBear);
@@ -40,25 +40,11 @@ public class ActiviteAnimals extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                int id = v.getId();
-                String viewName = getResources().getResourceEntryName(id);
+                String viewName = getResources().getResourceEntryName(v.getId());
                 String animalName = viewName.substring(3).toLowerCase();
 
                 Intent intent = new Intent(getApplicationContext(), ActiviteAnimalDetail.class);
-
-                switch (animalName) {
-                    case "cat":
-                    case "dog":
-                    case "rabbit":
-                    case "crow":
-                    case "fox":
-                    case "squerrel":
-                    case "elephant":
-                    case "bear":
-                    case "penguin":
-                        intent.putExtra("animal", animalName);
-                        break;
-                }
+                intent.putExtra("animal", animalName);
 
                 startActivity(intent);
             }
@@ -68,7 +54,7 @@ public class ActiviteAnimals extends AppCompatActivity {
         imgDog.setOnClickListener(animalClickListener);
         imgFox.setOnClickListener(animalClickListener);
         imgCrow.setOnClickListener(animalClickListener);
-        imgSquerrel.setOnClickListener(animalClickListener);
+        imgSquirrel.setOnClickListener(animalClickListener);
         imgBear.setOnClickListener(animalClickListener);
         imgElephant.setOnClickListener(animalClickListener);
         imgRabbit.setOnClickListener(animalClickListener);
@@ -81,7 +67,6 @@ public class ActiviteAnimals extends AppCompatActivity {
                 startActivity(i);
             }
         });
-
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());

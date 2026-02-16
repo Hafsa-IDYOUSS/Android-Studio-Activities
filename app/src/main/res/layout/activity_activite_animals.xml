@@ -121,7 +121,7 @@
             app:srcCompat="@drawable/img_crow" />
 
         <ImageButton
-            android:id="@+id/imgSquerrel"
+            android:id="@+id/imgSquirrel"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_margin="20px"

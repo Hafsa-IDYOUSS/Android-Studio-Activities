@@ -75,7 +75,7 @@ public class ActiviteAnimalDetail extends AppCompatActivity {
                 description = "Le corbeau est très intelligent et peut résoudre des problèmes complexes.\nIl peut reconnaître les visages et mémoriser des situations.\nIl est curieux et souvent observateur de son environnement.";
                 break;
 
-            case "squerrel":
+            case "squirrel":
                 videoResId = R.raw.vid_squirrel;
                 title = "L’Écureuil";
                 description = "L’écureuil est vif et rapide, il adore grimper aux arbres.\nIl stocke des noisettes et autres graines pour l’hiver.\nC’est un animal curieux et très actif durant la journée.";
