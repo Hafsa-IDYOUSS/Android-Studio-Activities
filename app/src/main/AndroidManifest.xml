@@ -12,6 +12,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.App1">
         <activity
+            android:name=".ActiviteRecyclerview"
+            android:exported="false" />
+        <activity
+            android:name=".SpinnerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GridActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActiviteListview"
+            android:exported="false" />
+        <activity
+            android:name=".ActiviteCardview"
+            android:exported="false" />
+        <activity
             android:name=".ActiviteAnimalDetail"
             android:exported="false" />
         <activity

@@ -11,44 +11,97 @@
         android:id="@+id/txtTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="59dp"
+        android:layout_marginVertical="50px"
         android:text="Android Studio Menu"
         android:textSize="18sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.065" />
 
-    <Button
-        android:id="@+id/btnActiv4"
+    <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="25dp"
-        android:backgroundTint="#8991CC"
-        android:text="Activité 4 - Texte"
-        app:layout_constraintBottom_toTopOf="@+id/btnActiv5"
+        android:layout_marginTop="46dp"
+        android:gravity="center"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle">
 
-    <Button
-        android:id="@+id/btnActiv5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="25dp"
-        android:backgroundTint="#74AED3"
-        android:text="Activité 5 - Calculatrice"
-        app:layout_constraintBottom_toTopOf="@+id/btnActiv7"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
+        <Button
+            android:id="@+id/btnActiv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10px"
+            android:backgroundTint="#8991CC"
+            android:text="Activité 4 - Texte" />
+
+        <Button
+            android:id="@+id/btnActiv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10px"
+            android:backgroundTint="#74AED3"
+            android:text="Activité 5 - Calculatrice" />
+
+        <Button
+            android:id="@+id/btnActiv7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10px"
+            android:text="Activité 7 - Multi-Activités" />
+
+        <Button
+            android:id="@+id/btnActiv11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10px"
+            android:backgroundTint="#78C88F"
+            android:text="Activité 11 - Multimédia" />
+
+        <Button
+            android:id="@+id/btnActivAnim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10px"
+            android:backgroundTint="#BDD100"
+            android:text="Activite Des Animaux" />
+
+        <Button
+            android:id="@+id/btnActivList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10px"
+            android:backgroundTint="#8BC34A"
+            android:text="Acitivité ListGridSpinner" />
+
+        <Button
+            android:id="@+id/btnActivCh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10px"
+            android:backgroundTint="#D964C4"
+            android:text="Activite Des Chiffres" />
+
+        <Button
+            android:id="@+id/btnActivRecycle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10px"
+            android:backgroundTint="#B14DC1"
+            android:text="Activité RecyclerView" />
+    </LinearLayout>
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="64dp"
+        android:layout_marginVertical="50px"
+        android:layout_marginBottom="40dp"
         android:text="Hafsa IDYOUSS - 2025/2026"
         android:textColor="#7C7B7B"
         android:textSize="14sp"
@@ -57,51 +110,4 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/btnActiv7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="277dp"
-        android:text="Activité 7 - Multi-Activités"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/btnActiv11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:backgroundTint="#78C88F"
-        android:text="Activité 11 - Multimédia"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnActiv7" />
-
-    <Button
-        android:id="@+id/btnActivCh"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:backgroundTint="#D964C4"
-        android:text="Activite Des Chiffres"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnActiv11" />
-
-    <Button
-        android:id="@+id/btnActivAnim"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="42dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="42dp"
-        android:backgroundTint="#C36363"
-        android:text="Activite Des Animaux"
-        app:layout_constraintEnd_toEndOf="@+id/txtTitle"
-        app:layout_constraintStart_toStartOf="@+id/btnActivCh"
-        app:layout_constraintTop_toBottomOf="@+id/btnActivCh" />
 </androidx.constraintlayout.widget.ConstraintLayout>

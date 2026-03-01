@@ -13,7 +13,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button Activ4, Activ5, Activ7, Activ11, ActivCh, ActivAnim;
+    Button Activ4, Activ5, Activ7, Activ11, ActivCh, ActivAnim, ActivList, ActivRecycler;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
         Activ11 = findViewById(R.id.btnActiv11);
         ActivCh = findViewById(R.id.btnActivCh);
         ActivAnim = findViewById(R.id.btnActivAnim);
+        ActivList = findViewById(R.id.btnActivList);
+        ActivRecycler = findViewById(R.id.btnActivRecycle);
 
         Activ4.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,6 +73,22 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(MainActivity.this, ActiviteAnimals.class);
+                startActivity(i);
+            }
+        });
+
+        ActivList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), ActiviteListview.class);
+                startActivity(i);
+            }
+        });
+
+        ActivRecycler.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(), ActiviteRecyclerview.class);
                 startActivity(i);
             }
         });
